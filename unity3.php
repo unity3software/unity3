@@ -184,3 +184,8 @@ class Unity3 {
     }
 }
 new Unity3();
+
+if ( is_admin() ) {
+    require_once( plugin_dir_path( __FILE__ ). '/includes/class-github-plugin-updater.php' );
+    new GitHubPluginUpdater( __FILE__, 'unity3software', "unity3" );
+}
