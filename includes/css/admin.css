@@ -1,0 +1,12 @@
+/* Hide Jetpack Stats external links. (keep user in wp-admin) */
+#stats-loading-wrap p a {
+    display: none!important;
+}
+
+body.jetpack_page_stats div.wrap h2 a {
+    display: none;
+}
+
+div.gotonewdash {
+    display: none!important;
+}

@@ -1,0 +1,20 @@
+.wp-list-table .column-dragsort {
+    width: 20px;
+}
+
+tbody#the-list td.column-dragsort::before {
+    content: "";
+    display: block;
+    background: transparent url("drag-icon.png") no-repeat scroll 0% 0%;
+    opacity: 0.8;
+    height: 40px;
+}
+
+tbody#the-list td.column-dragsort {
+    cursor: move;
+    visibility: hidden;
+}
+
+tbody#the-list tr:hover td.column-dragsort {
+    visibility: visible;
+}
